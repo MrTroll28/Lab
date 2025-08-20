@@ -11,3 +11,6 @@ class Person {
     console.log(`Name: ${this.name}, Age: ${this.age}`);
   }
 }
+
+const person1 = new Person("Đặng Khôi Nguyên", 21);
+person1.displayInfo();
