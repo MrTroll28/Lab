@@ -1,4 +1,4 @@
-async function multiplyByThree(num: number) {
+export async function multiplyByThree(num: number) {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     return num * 3;
 }
