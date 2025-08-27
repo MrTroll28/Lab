@@ -1,4 +1,4 @@
-async function fetchUser(id: number) {
+export async function fetchUser(id: number) {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     return { id, name: "User " + id };
 }
