@@ -20,17 +20,18 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({
-  image = require("../assets/vs_black.png"),
-  title = "Điện Thoại Vsmart Joy 3 - Hàng chính hãng",
-  rating = 4.5,
-  reviews = 828,
-  price = "1.790.000 ₫",
-  oldPrice = "1.790.000 ₫",
+  image,
+  title,
+  rating,
+  reviews,
+  price,
+  oldPrice,
   onChooseColor,
   onBuy,
 }: ProductCardProps) {
-  const fullStars = Math.floor(rating);
-  const halfStar = rating - fullStars >= 0.5;
+  const safeRating = rating ?? 0;
+  const fullStars = Math.floor(safeRating);
+  const halfStar = safeRating - fullStars >= 0.5;
 
   return (
     <View style={styles.card}>
