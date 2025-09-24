@@ -6,6 +6,6 @@ import Bai05 from './screens/Bai05';
 
 export default function App() {
   return (
-    <Bai05 />
+    <Bai01 />
   );
 }
