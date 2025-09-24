@@ -8,7 +8,7 @@ import ProfileScreen from "./ProfileScreen";
 
 const Tab = createBottomTabNavigator();
 
-export default function Bai02() {
+export default function Bai03() {
   return (
     <NavigationContainer>
       <Tab.Navigator

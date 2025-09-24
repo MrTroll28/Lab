@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Bai01 from './screens/Bai01';
-import Bai02 from './screens/Bai02';
+import Bai03 from './screens/Bai03';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Bai02 />
+      <Bai03 />
     </View>
   );
 }
